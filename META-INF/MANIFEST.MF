@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Xtrust
+Bundle-SymbolicName: xtrust;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.jdt.launching;bundle-version="3.14.0"
+Automatic-Module-Name: xtrust
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: annotations,
+ xtrust.core,
+ xtrust.handlers

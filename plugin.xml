@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension point = "org.eclipse.ui.actionSets">
+        <actionSet
+            id="org.eclipse.examples.helloworld.HelloWorldActionSet"
+            label="Hello World"
+	    visible="true"
+	    description="The action set for the Eclipse Hello World example">
+	    <menu
+		id="org.eclipse.examples.helloworld.HelloWorldMenu"
+		label="Samples">
+		<separator name="samples"/>
+	    </menu>
+	    <action id="org.eclipse.examples.helloworld.actions.HelloWorldAction"
+		menubarPath="org.eclipse.examples.helloworld.HelloWorldMenu/samples"
+		toolbarPath="Normal"			
+		label="Hello World"
+		tooltip="Press to see a message"
+		icon="icons/helloworld.gif"
+		class="xtrust.xtrust.core.Core"/>
+        </actionSet>
+    </extension>
+    
+    <action
+           id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"
+           toolbarPath="org.eclipse.debug.ui.launchActionSet/debug"
+           hoverIcon="$nl$/icons/full/etool16/run_exc.png"
+           class="org.eclipse.debug.internal.ui.actions.RunToolbarAction"
+           disabledIcon="$nl$/icons/full/dtool16/run_exc.png"
+           icon="$nl$/icons/full/etool16/run_exc.png"
+           helpContextId="run_action_context"
+           label="%RunDropDownAction.label"
+           style="pulldown">
+     </action>
+   
+
+</plugin>
